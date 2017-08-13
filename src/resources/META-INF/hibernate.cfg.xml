@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/developers_db?useUnicode=true&amp;useSSL=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC
+        </property>
+
+        <property name="hibernate.connection.username">root</property>
+
+        <property name="hibernate.connection.password">1111</property>
+
+        <property name="connection.pool_size">5</property>
+
+        <property name="show_sql">false</property>
+
+        <!--<property name="hbm2ddl.auto">create</property>-->
+
+        <!-- If we will use .xml config files for classes -->
+        <!--<mapping resource="src.main.resources.SomeFile.hbm.xml"/>-->
+        <mapping class="instance.Company"/>
+        <mapping class="instance.Customer"/>
+        <mapping class="instance.Developer"/>
+        <mapping class="instance.Project"/>
+        <mapping class="instance.Skills"/>
+
+
+    </session-factory>
+</hibernate-configuration>

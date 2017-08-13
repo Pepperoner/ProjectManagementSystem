@@ -1,0 +1,12 @@
+ALTER TABLE developers_db.developers ADD COLUMN salary INT NOT NULL AFTER surname;
+update developers_db.developers set salary = 2000 where id=1;
+update developers_db.developers set salary = 3000 where id=2;
+update developers_db.developers set salary = 3500 where id=3;
+update developers_db.developers set salary = 1000 where id=4;
+update developers_db.developers set salary = 800 where id=5;
+update developers_db.developers set salary = 1400 where id=6;
+update developers_db.developers set salary = 1700 where id=7;
+update developers_db.developers set salary = 1900 where id=8;
+update developers_db.developers set salary = 3200 where id=9;
+update developers_db.developers set salary = 3600 where id=10;
+select * from developers_db.developers;
