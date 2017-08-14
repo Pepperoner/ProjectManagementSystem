@@ -14,7 +14,7 @@
     <!--<properties>-->
 
     <!--<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/developers_db?useUnicode=true&amp;useSSL=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>-->
-    <!--<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>-->
+    <!--<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>-->
     <!--<property name="javax.persistence.jdbc.user" value="root"/>-->
     <!--<property name="javax.persistence.jdbc.password" value="1111"/>-->
     <!--&lt;!&ndash;<property name="javax.persistence.schema-generation.database.action" value="create"/>&ndash;&gt;-->
@@ -35,7 +35,7 @@
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/developers_db?useUnicode=true&amp;useSSL=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
-            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
             <property name="hibernate.connection.username" value="root"/>
             <property name="hibernate.connection.password" value="1111"/>
             <property name="hibernate.show_sql" value="false"/>
